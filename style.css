@@ -12,7 +12,8 @@ body{
 }
 
 header{
-    position: absolute;
+    position: sticky;
+    top: 25px;
     display: flex;
     background-color: #fff;
     border: 1px solid #000;
