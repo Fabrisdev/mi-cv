@@ -12,7 +12,7 @@ body{
 }
 
 header{
-    position: sticky;
+    position: fixed;
     top: 25px;
     display: flex;
     background-color: #fff;
