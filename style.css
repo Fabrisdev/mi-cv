@@ -65,3 +65,14 @@ header :first-child::before {
     font-size: 90px;
     text-align: right;
 }
+
+hr {
+    border: 2px dashed #000;
+    width: 70%;
+    margin: 50px;
+}
+
+h4 {
+    font-size: 70px;
+    font-family: Roboto;
+}
