@@ -136,13 +136,25 @@ h4 {
     place-items: center;
 }
 
-#estudios-container div img {
+#estudios-container div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#estudios-container div .date{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#estudios-container div div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#estudios-container div{
+#estudios-container div div{
     display: grid;
     grid-template-rows: 1.5fr 1fr;
     width: 300px;
