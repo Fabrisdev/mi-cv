@@ -178,6 +178,7 @@ h4 {
 #about-me-wave {
     background-image: url(images/about-me-waves.svg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .no-margin-bottom {
@@ -202,9 +203,24 @@ h4 {
 }
 
 #about-me-bottom-wave {
-    z-index: 1000;
     width: 100%;
     position: absolute;
-    bottom: 0;
-    height: 1000px;
+    top: 0;
+}
+
+#about-me-wave::after {
+    background-image: url(images/about-me-bottom-wave.svg);
+    width: 100%;
+    height: 300px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+#sobre-mi {
+    color: #fff;
+}
+
+#conocimientos {
+    margin-top: 100px;
 }
