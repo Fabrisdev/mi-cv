@@ -11,6 +11,14 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+}
+
+#start-waves {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 header{
@@ -86,6 +94,7 @@ hr {
 h4 {
     font-size: 70px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 #about-me-container{
@@ -166,3 +175,36 @@ h4 {
     padding: 20px;
 }
 
+#about-me-wave {
+    background-image: url(images/about-me-waves.svg);
+    background-repeat: no-repeat;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+#about-me-top-wave{
+    transform: translate(0, 50%);
+    background-color: #6198ff;
+    height: 200px;
+    width: 100%;
+    border-radius: 100% 100% 0 0;
+    z-index: -1;
+}
+
+#about-me-wave-container {
+    position: relative;
+}
+
+#about-me-bottom-wave {
+    z-index: 1000;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 1000px;
+}
