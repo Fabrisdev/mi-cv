@@ -33,6 +33,11 @@ header a {
     text-decoration: none;
     color: #000;
     transition: all 0.2s;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 header a:hover{
@@ -109,4 +114,16 @@ h4 {
     justify-content: center;
     align-items: center;
     font-size: 18px;
+}
+
+#conocimientos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    place-items: center;
+
+}
+
+#conocimientos-container img {
+    width: 200px;
 }
