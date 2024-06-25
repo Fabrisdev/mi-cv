@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi CV</title>
     <script src="js/smooth-scroll.js" defer></script>
+    <script src="js/section-header-scroll.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,72 +14,80 @@
 <body id="inicio">
     <img id="start-waves" src="images/start-waves.svg" alt="">
     <header>
-        <a href="#inicio">INICIO</a>
-        <a href="#sobre-mi">SOBRE MI</a>
-        <a href="#conocimientos">CONOCIMIENTOS</a>
-        <a href="#estudios">ESTUDIOS</a>
-        <a href="#proyectos">PROYECTOS</a>
+        <a href="#inicio" id="header-inicio">INICIO</a>
+        <a href="#about-me-wave" id="header-sobre-mi">SOBRE MI</a>
+        <a href="#conocimientos" id="header-conocimientos">CONOCIMIENTOS</a>
+        <a href="#estudios" id="header-estudios">ESTUDIOS</a>
+        <a href="#proyectos" id="header-proyectos">PROYECTOS</a>
     </header>
-    <div id="title-container">
+    <section id="title-container" data-section-name="header-inicio">
         <h3>Me presento.</h3>
         <h2>Soy <strong>Fabri</strong>.</h2>
-    </div>
-    <div id="about-me-top-wave"></div>
-    <div id="about-me-wave">
-        <h4 id="sobre-mi">Sobre mí</h4>
-        <div id="about-me-container">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ipsam non tenetur vel sed ab! Et eum quod animi cumque fugit omnis. Dignissimos eaque veritatis necessitatibus nam? Delectus, atque esse.
-            Sint totam voluptatibus fuga! Quibusdam unde sapiente dolor qui, error reprehenderit ullam quasi numquam fuga dignissimos vel impedit asperiores ipsa non culpa ex. Molestiae praesentium maiores necessitatibus culpa odio ad.
-            Dolore fuga assumenda necessitatibus dicta. Unde qui dolore iure iusto nemo eveniet deleniti pariatur atque fuga illum nesciunt illo expedita blanditiis, cum quos accusantium consectetur voluptatum esse ut id. Expedita!
-            Ipsa eius exercitationem voluptates voluptas possimus odit recusandae harum eaque? Fugit delectus, ad expedita veniam, error, quam enim repellat excepturi eius nostrum velit molestiae quisquam qui saepe possimus totam facilis?
-            Harum expedita natus dolorem pariatur minima, distinctio nihil magni qui ut sed alias autem dignissimos error illo quae minus porro quo inventore quas ducimus. Alias veritatis quas itaque doloribus aspernatur.</p>
-            <img src="images/foto-mia.jpeg" alt="Una foto mia para presentarme">
+    </section>
+    <section data-section-name="header-sobre-mi">
+        <div id="about-me-top-wave"></div>
+        <div id="about-me-wave">
+            <h4 id="sobre-mi">Sobre mí</h4>
+            <div id="about-me-container">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ipsam non tenetur vel sed ab! Et eum quod animi cumque fugit omnis. Dignissimos eaque veritatis necessitatibus nam? Delectus, atque esse.
+                Sint totam voluptatibus fuga! Quibusdam unde sapiente dolor qui, error reprehenderit ullam quasi numquam fuga dignissimos vel impedit asperiores ipsa non culpa ex. Molestiae praesentium maiores necessitatibus culpa odio ad.
+                Dolore fuga assumenda necessitatibus dicta. Unde qui dolore iure iusto nemo eveniet deleniti pariatur atque fuga illum nesciunt illo expedita blanditiis, cum quos accusantium consectetur voluptatum esse ut id. Expedita!
+                Ipsa eius exercitationem voluptates voluptas possimus odit recusandae harum eaque? Fugit delectus, ad expedita veniam, error, quam enim repellat excepturi eius nostrum velit molestiae quisquam qui saepe possimus totam facilis?
+                Harum expedita natus dolorem pariatur minima, distinctio nihil magni qui ut sed alias autem dignissimos error illo quae minus porro quo inventore quas ducimus. Alias veritatis quas itaque doloribus aspernatur.</p>
+                <img src="images/foto-mia.jpeg" alt="Una foto mia para presentarme">
+            </div>
         </div>
-    </div>
-    <h4 id="conocimientos">Mis conocimientos</h4>
-    <div id="conocimientos-container">
-        <img src="images/html-logo.png" alt="HTML">
-        <img src="images/css-logo.png" alt="CSS">
-        <img src="images/js-logo.png" alt="Javascript">
-        <img src="images/react-logo.png" alt="React">
-        <img src="images/typescript-logo.png" alt="Typescript">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.JS">
-        <img src="images/php-logo.png" alt="PHP">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel">
-    </div>
+    </section>
+    <section data-section-name="header-conocimientos">
+        <h4 id="conocimientos">Mis conocimientos</h4>
+        <div id="conocimientos-container">
+            <img src="images/html-logo.png" alt="HTML">
+            <img src="images/css-logo.png" alt="CSS">
+            <img src="images/js-logo.png" alt="Javascript">
+            <img src="images/react-logo.png" alt="React">
+            <img src="images/typescript-logo.png" alt="Typescript">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.JS">
+            <img src="images/php-logo.png" alt="PHP">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel">
+        </div>
+    </section>
     <hr>
-    <h4 id="estudios">Mis estudios</h4>
-    <div id="estudios-container">
-        <div>
+    <section data-section-name="header-estudios">
+        <h4 id="estudios">Mis estudios</h4>
+        <div id="estudios-container">
             <div>
-                <img src="images/escuela-superior-de-informatica.jpg" alt="Escuela superior de informática (ESI)">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iste corrupti veritatis cupiditate impedit voluptas ratione quam dolor eum quod aliquam dolore enim iure recusandae explicabo, maxime molestias fuga illum.</p>
+                <div>
+                    <img src="images/escuela-superior-de-informatica.jpg" alt="Escuela superior de informática (ESI)">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iste corrupti veritatis cupiditate impedit voluptas ratione quam dolor eum quod aliquam dolore enim iure recusandae explicabo, maxime molestias fuga illum.</p>
+                </div>
+                <p class="date">2022 - 2024</p>
             </div>
-            <p class="date">2022 - 2024</p>
-        </div>
-        <div>
             <div>
-                <img src="images/escuela-superior-de-informatica.jpg" alt="Escuela superior de informática (ESI)">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iste corrupti veritatis cupiditate impedit voluptas ratione quam dolor eum quod aliquam dolore enim iure recusandae explicabo, maxime molestias fuga illum.</p>
+                <div>
+                    <img src="images/escuela-superior-de-informatica.jpg" alt="Escuela superior de informática (ESI)">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iste corrupti veritatis cupiditate impedit voluptas ratione quam dolor eum quod aliquam dolore enim iure recusandae explicabo, maxime molestias fuga illum.</p>
+                </div>
+                <p class="date">2022 - 2024</p>
             </div>
-            <p class="date">2022 - 2024</p>
-        </div>
-        <div>
             <div>
-                <img src="images/escuela-superior-de-informatica.jpg" alt="Escuela superior de informática (ESI)">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iste corrupti veritatis cupiditate impedit voluptas ratione quam dolor eum quod aliquam dolore enim iure recusandae explicabo, maxime molestias fuga illum.</p>
+                <div>
+                    <img src="images/escuela-superior-de-informatica.jpg" alt="Escuela superior de informática (ESI)">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iste corrupti veritatis cupiditate impedit voluptas ratione quam dolor eum quod aliquam dolore enim iure recusandae explicabo, maxime molestias fuga illum.</p>
+                </div>
+                <p class="date">2022 - 2024</p>
             </div>
-            <p class="date">2022 - 2024</p>
-        </div>
-        <div>
             <div>
-                <img src="images/escuela-superior-de-informatica.jpg" alt="Escuela superior de informática (ESI)">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iste corrupti veritatis cupiditate impedit voluptas ratione quam dolor eum quod aliquam dolore enim iure recusandae explicabo, maxime molestias fuga illum.</p>
+                <div>
+                    <img src="images/escuela-superior-de-informatica.jpg" alt="Escuela superior de informática (ESI)">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iste corrupti veritatis cupiditate impedit voluptas ratione quam dolor eum quod aliquam dolore enim iure recusandae explicabo, maxime molestias fuga illum.</p>
+                </div>
+                <p class="date">2022 - 2024</p>
             </div>
-            <p class="date">2022 - 2024</p>
         </div>
-    </div>
+    </section>
     <hr>
-    <h4 id="proyectos">Mis proyectos</h4>
+    <section data-section-name="header-proyectos">
+        <h4 id="proyectos">Mis proyectos</h4>
+    </section>
 </body>
 </html>
