@@ -117,14 +117,17 @@ h4 {
 #about-me-container p {
     margin: 20px;
     border-radius: 10px;
-    background-color: #fff;
+    background-image: url(images/blob-about-me.svg);
+    background-size: cover;
+    background-position: center;
     color: #000;
     padding: 20px;
-    border: 3px dashed #000;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
+    padding: 200px 200px 200px 250px;
+    margin: -200px -100px -200px -100px;
 }
 
 #conocimientos-container {
